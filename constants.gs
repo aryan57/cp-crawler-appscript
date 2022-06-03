@@ -1,4 +1,13 @@
 const GITHUB_TOKEN = "";
+const GITHUB_USER_ID = "aryan57"
+const GITHUB_REPO_NAME = "cp-archive"
+
+
+const GITHUB_CODEFORCES_FOLDER_PATH = 'https://api.github.com/repos/'+
+                                        GITHUB_USER_ID + "/" +
+                                        GITHUB_REPO_NAME + "/" +
+                                        '/contents/Codeforces-auto-uploads/'
+
 
 const CODEFORCES_HANDLE = "aryan57";
 const CODECHEF_HANDLE = "aryan57";
