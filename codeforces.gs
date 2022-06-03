@@ -32,7 +32,7 @@ function codeforcesHandler() {
       if(code_txt==null)continue; //error in parsing code text from crawler
 
       let problem_name = response[j]["problem"]["index"].toString() +
-                          " - " + response[j]["problem"]["name"].toString();
+                          "_" + response[j]["problem"]["name"].toString();
       problem_name = remove_bad_chars(problem_name)
 
       const file_extension = (EXTENSION_MAPPING[response[j]["programmingLanguage"]]?EXTENSION_MAPPING[response[j]["programmingLanguage"]]:DEFAULT_EXTENSION);
