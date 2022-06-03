@@ -39,8 +39,8 @@ function codeforcesHandler() {
       
       const file_name = problem_name+file_extension
       const base64Content = Utilities.base64Encode(code_txt)
-      const github_url = 'https://api.github.com/repos/aryan57/cp-archive/contents/Codeforces-auto-uploads/'
-                          +encodeURIComponent(contest_name)+"/"+encodeURIComponent(file_name)
+      const github_url = GITHUB_CODEFORCES_FOLDER_PATH+encodeURIComponent(contest_name)+
+                        "/"+encodeURIComponent(file_name)
 
       const data = {
         "message": time_now(),
